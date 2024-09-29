@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Matlema">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/c5f11f884a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <title>Matlema</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <div class="logo">
+          <h2>Rakgwale <span>Matlema</span></h2>
+        </div>
+        <div class="navbar-links">
+          <ul class="navbar-navigation-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="navbar-social-links">
+            <div class="social-icons">
+              <li><a href="https://www.facebook.com/Matlema4"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="https://www.x.com/short_vocals_sa"><i class="fa-brands fa-twitter-square"></i></a></li>
+              <li><a href="https://www.instagram.com/shortvocalssa"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/@shortvocalssa"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/matlema-rakgwale-588390304/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://wa.me/qr/OJUBTAC7D6K4B1"><i class="fa-brands fa-whatsapp"></i></a></li>
+          </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="content">
+        <div class="header-text">
+            <h2>My Work</h2>
+            <p>Skills can be learned. Personality is inherent.</p>
+        </div>
+        <div class="skills">
+          <div class="skills-items">
+            <img src="img/phil-1.jpg" alt="">
+            <div class="btn">
+              <a href="#">Launch</a>
+            </div>
+            <h3>Plaudits SA</h3>
+            <p>an online clothing store (e-commerce).</p>
+          </div>
+          <div class="skills-items">
+            <img src="img/phil-7.jpg" alt="">
+            <div class="btn">
+              <a href="#">Launch</a>
+            </div>
+            <h3>Producer Warehouse</h3>
+            <p>an online beat store.</p>
+          </div>
+          <div class="skills-items">
+            <img src="img/phil-9.jpg" alt="">
+            <div class="btn">
+              <a href="#">Launch</a>
+            </div>
+            <h3>Music</h3>
+            <p>songs, poems, podcasts, ads...</p>
+          </div>
+          <div class="skills-items">
+            <img src="img/phil-10.jpg" alt="">
+            <div class="btn">
+              <a href="#">Launch</a>
+            </div>
+            <h3>Videography</h3>
+            <p>music videos, vlogs, lyric videos...</p>
+          </div>
+          <div class="skills-items">
+            <img src="img/phil-6.jpg" alt="">
+            <div class="btn">
+              <a href="#">Launch</a>
+            </div>
+            <h3>Graphic Designer</h3>
+            <p>album arts, logos, posters...</p>
+          </div>
+          <div class="skills-items">
+            <img src="img/phil-3.jpg" alt="">
+            <div class="btn">
+              <a href="#">Launch</a>
+            </div>
+            <h3>Text To Audio</h3>
+            <p>app that converts text to audio...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myskills">
+      <div id="h2"><h2>My Skills And Experince</h2></div>
+      <div class="tab-title">
+          <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+          <p class="tab-links"onclick="opentab(event,'education')">Education</p>
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+          <ul>
+              <li><span>C++</span><br>Problem Solvings.</li>
+              <li><span>Python</span><br>Problem Solvings(still a beginner).</li>
+              <li><span>HTML/CSS</span><br>Designing Websites Front-end.</li>
+              <li><span>Javascript</span><br>Designing Websites Front-end(still a beginner).</li>
+          </ul>
+      </div>
+      <div class="tab-contents" id="education">
+          <ul>
+              <li><span>2018-2022</span><br>Makgwahleng Secondary School.</li>
+              <li><span>2023-Current</span><br>University Of Limpopo.</li>
+          </ul>
+      </div>
+  </body>
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</html>
