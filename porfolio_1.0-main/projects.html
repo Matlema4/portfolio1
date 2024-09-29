@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Matlema">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/c5f11f884a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Matlema</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav id="general-nav">
+        <div class="logo">
+          <h2>Rakgwale <span>Matlema</span></h2>
+        </div>
+        <div class="navbar-links">
+          <ul class="navbar-navigation-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="heading-text">
+          <h2>My Projects</h2>
+          <p>Skills can be learned. Personality is inherent.</p>
+      </div>
+      <div class="skills">
+          </div>
+          <h3>Music</h3>
+          <p>songs, mixtapes...</p>
+        </div>
+        <div class="skills-items">
+          <div class="img">
+            <img src="7fa33a697afd8a042b7312fee064e369.jpg" alt="">
+            <div class="btn">
+              <a href="https://youtube.com/shortvocalssa">Launch</a>
+            </div>
+          </div>
+          <h3>My Music</h3>
+          <p>music, mixtapes...</p>
+        </div>
+        
+        <div class="skills">
+        </div>
+        <h3>GitHub</h3>
+        <p></p>
+      </div>
+      <div class="skills-items">
+        <div class="img">
+          <img src="images (4).jpeg" alt="">
+          <div class="btn">
+            <a href="https://github.com/Matlema4">Launch</a>
+          </div>
+        </div>
+        <h3>GitHub</h3>
+        <p>Projects, Portfolio, simple programs...</p>
+      </div>
+        <ul class="navbar-social-links">
+          <div class="social-icons">
+            <li><a href="https://www.facebook.com/Matlema4"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.x.com/short_vocals_sa"><i class="fa-brands fa-twitter-square"></i></a></li>
+            <li><a href="https://www.instagram.com/shortvocalssa"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/@shortvocalssa"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/matlema-rakgwale-588390304/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https:wa.me/qr/OJUBTAC7D6K4B1"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="mailto: rakgwalematlema5@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+        </div>
+        </ul>
+    <footer>
+      <div class="home-footer">
+        <p>
+          <p>&copy; 2024 Rakgwale Matlema. All Rights Reserved.</p>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</html>
